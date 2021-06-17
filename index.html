@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>How2Sign Dataset</title>
+        <meta name="description" content="How2Sign Dataset">
+        <meta name="keywords" content="Deep Learning, deep learning, sign language, ASL, American Sign Language, american sign language, dataset, continuos sign language, video, person skeleton, depth, panoptic data, multiview, 3D, gloss">
+        <meta name="author" content="Amanda Duarte">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo/h2s_logo_small.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Logo End -->
+                    <!-- Menu Start -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                           <!-- Home -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span> </a>
+                            </li>
+
+                            <!-- Explore
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Explore
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="404.html">404 Page</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                </div>
+                            </li>
+                                  Explore -->
+                            <!-- Download -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#download">Download</a>
+                            <!-- Code -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/how2sign/how2sign-data">Code</a>
+                            </li>
+                            <!-- Publication -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#publication">Publication</a>
+                            </li>
+                        </ul>
+                    </div>
+                  <!-- Menu End -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+==================================================
+Slider Section Start
+================================================== -->
+<section id="hero-area" >
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="block wow fadeInUp" data-wow-delay=".3s">
+
+                <!-- Slider -->
+                <section class="cd-intro">
+                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".2s" >
+                    <span>How2Sign Dataset</span><br>
+                    <span class="cd-words-wrapper">
+                        <b class="is-visible">Continuous American Sign Language</b>
+                        <b>Multiview videos</b>
+                        <b>Depth data</b>
+                        <b>2D &amp 3D skeleton</b>
+                        <b>Gloss annotations</b>
+                        <b>English translation</b>
+                    </span>
+                    </h1>
+                    </section> <!-- cd-intro -->
+                    <!-- /.slider -->
+                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                        <span>The firt large-scale multimodal and multiview continuous American Sign Language dataset</span>
+                    </h2>
+                    <!-- Download -->
+                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" href="#download">Download Sample</a>
+                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green" data-wow-delay=".9s" href="#download">Download Full Dataset</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#main-slider-->
+
+<!--
+==================================================
+About Section Start
+================================================== -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <h2>
+                    ABOUT
+                    </h2>
+                    <p align="justify">
+                      We introduce How2Sign, a multimodal and multiview continuous American Sign Language (ASL) dataset,
+                      consisting of a parallel corpus of more than 80 hours of sign language videos and a set of corresponding
+                      modalities including speech, English transcripts, and depth. <br>
+                      A three-hour subset was further recorded in the Panoptic studio enabling detailed 3D pose estimation.<br>
+                      This dataset is publicly available for research purposes only.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow">
+                    <img src="images/teaser.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <!-- /#about -->
+
+<!--
+==================================================
+Download Section Start
+================================================== -->
+<section id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2 class="title wow">Download</h1>
+            <p class="wow"> <span>This section is under construction.</span> Part of the data is not available yet.<br>
+              We will be realeasing the entire dataset and scripts to download soon! <br>
+              The dataset is publicly available for research purposes only.
+            </p>
+            <!-- Buttons to download the dataset at once
+            <a href="contact.html" class="btn btn-default btn-contact wow" data-wow-delay=".7s" data-wow-duration="500ms">Download Sample</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact.html" class="btn btn-default btn-contact wow" data-wow-delay=".7s" data-wow-duration="500ms">Download Full Dataset</a>
+        </div>
+        <br>
+        --->
+
+      <!-- New added section start -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4 style="padding-top: 25px;">Download the videos, annotations and metadata separetly</h4>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>videos</span> (frontal view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/0/uc?id=11yvM_x5bFhVl5EcU-PRNdN6K7TOWCEmU&export=download" target="_blank">
+                        <button class="button">Train (290G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1AxoXv8qQv2M4Wzyg_i6RPv-U35x-ZH7a&export=download" target="_blank">
+                      <button class="button">Validation (16G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=18YOZ2tM74MmcgZJ63VQe0uzFqWe0j3Hl&export=download" target="_blank">
+                      <button class="button">Test (23G)</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (frontal view) - FINAL -->
+              <!-- Green Screen RGB videos (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>videos</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/0/uc?id=1ZihOTh97dlULKfjVEsVAsSrsKFcopfCq&export=download" target="_blank">
+                      <button class="button" id="seg_train_button">Train (290G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1HyRHH70vspERdn2W2ECDXbror34rFnuQ&export=download" target="_blank">
+                      <button class="button" id="seg_validation_button"> Validation (16G)</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://drive.google.com/u/2/uc?id=1qRYOUERTAERQVhBcexuKAN-SBZ4McsB5&export=download" target="_blank">
+                      <button class="button" id="seg_test_button" >Test (23G)</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB videos (side view) - FINAL -->
+              <!-- Green Screen RGB clips (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>clips*</span> (frontal view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB clips (frontal view) - FINAL -->
+              <!-- Green Screen RGB clips (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> Green Screen RGB <span>clips*</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen RGB clips (side view) - FINAL -->
+              <!-- Green Screen 2D keyponts clips (frontal view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> B-F-H 2D Keypoints <span>clips*</span> (frontal view)</div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen 2D keyponts clips (frontal view) - FINAL -->
+              <!-- Green Screen 2D keyponts clips (side view) - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> B-F-H 2D Keypoints <span>clips*</span> (side view) </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train </button>
+                    </a>
+                    </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Green Screen 2D keyponts clips (side view) - FINAL -->
+              <!-- How2 dataset - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> How2 data* </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-12">
+                    <a href="https://github.com/srvk/how2-dataset" target="_blank">
+                      <button class="button">Go to the How2 dataset website</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- How2 dataset - FINAL -->
+              <!-- English Translation - START -->
+              <div class="row">
+                <div class="col-2 titlecol"> English Translation </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Train</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- English Translation - FINAL -->
+              <!-- Gloss Annotation - START
+              <div class="row">
+                <div class="col-2 titlecol"> Gloss Annotation </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Train</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Validation</button>
+                    </a>
+                  </div>
+                  <div class="col-4">
+                    <a href="https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-bbox.csv">
+                      <button class="button">Test</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                      Gloss Annotation - FINAL -->
+
+              <!-- Metadata - START
+              <div class="row">
+                <div class="col-2 titlecol"> Metadata </div>
+                <div class="col-10" style="padding:0">
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button">Video categories</button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> Original timestamps </button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button">Re-aligned timestamps</button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> General Statistics </button>
+                    </a>
+                  </div>
+                  <div class="col-fifth">
+                    <a href="">
+                      <button class="button"> Camera parameters </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              Metadata - FINAL -->
+
+
+      </div> <!-- col-md-12 -->
+    </div><!-- row -->
+
+        <div class="extra-info">
+            <p>
+              <h4>Copyright</h4>
+              <p class="wow">
+                The dataset on this webpage are copyright by us and published under the <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+                This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                <span> You may NOT use the material for commercial purposes.</span></p>
+
+              <h4>Disclaimer</h4>
+              <p class="wow"> The How2Sign dataset was collected as a tool for research, however, it is worth noting that the dataset may have unintended biases (including those of a societal, gender or racial nature).
+              For more information about the bias that the dataset might present, please refer to the published paper.</p>
+
+              <h4>Green Screen RGB clips*</h4>
+              <p class="wow"> The Green Screen RGB clips were segmented using the original timestamps from the How2 dataset. Each clip correspond to one sentence of the English translation.
+                Note that this may not have a perfect aligment between the ASL video and the English translation due the differences between both languages. <br>
+                The manual re-aligment of the English translation with the ASL videos will be realeased soon!
+              </p>
+
+              <h4>How2 Data*</h4>
+              <p class="wow"> For copyright reasons we are not allowed to redistribute the How2 data. Please refer to the original resopository to request and download the entire How2 dataset if needed.<br>
+                Note that the How2Sign follows the original [train/validation/test] splits of the How2 dataset.
+              </p>
+            </p>
+       </div><!--extra-info-->
+    </div><!--container-->
+</section>
+
+<!--
+  ==================================================
+  Publication Section Start
+  ================================================== -->
+  <section id="publication">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="block">
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Publication</h1>
+                      <p class="wow"> <span>How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language </span><br>
+                      <p class="wow">
+                            <a href="http://amandaduarte.com.br/" target="_blank">Amanda Duarte</a>,
+                            <a href="https://shrutijpalaskar.github.io/" target="_blank">Shruti Palaskar</a>,
+                            <a href="http://lucasventura.com/" target="_blank">Lucas Ventura</a>,
+                            <a href="https://deeptigp.github.io/" target="_blank">Deepti Ghadiyaram</a>,
+                            <a href="https://my.gallaudet.edu/kenneth-de-haan" target="_blank">Kenneth DeHaan</a>,
+                            <a href="https://www.cs.cmu.edu/~fmetze/interACT/Home.html" target="_blank">Florian Metze</a>,
+                            <a href="https://torres.ai/" target="_blank">Jordi Torres</a>, and
+                            <a href="https://imatge.upc.edu/web/people/xavier-giro" target="_blank">Xavier Giró-i-Nieto</a><br>
+                            CVPR, 2021 <br>
+                            [<a href="https://arxiv.org/abs/2008.08143" target="_blank">PDF</a>] [<a href="https://youtu.be/DMlPw6J353o" target="_blank">1' video</a>] [<a href="https://how2sign.github.io/images/poster/How2Sign_Poster.pdf" target="_blank">Poster</a>]
+
+                      <p class="wow">When using the How2Sign Dataset please reference:</p>
+                      <div class="alert">
+                          @inproceedings{Duarte_CVPR2021,<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;title={{How2Sign: A Large-scale Multimodal Dataset for Continuous American Sign Language}},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;author={Duarte, Amanda and Palaskar, Shruti and Ventura, Lucas and Ghadiyaram, Deepti and DeHaan, Kenneth and <br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               Metze, Florian and Torres, Jordi and Giro-i-Nieto, Xavier},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},<br>
+                              &nbsp;&nbsp;&nbsp;&nbsp;year={2021}<br>
+                          }
+                      </div>
+                      <!-- Video - START -->
+                      &nbsp;&nbsp;
+                      <div class="block">
+                        <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Video Summary</h1>
+                        <center>
+                          <div class="embed-responsive embed-responsive-16by9 youtubeEmbed">
+                              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y9oQH44nCag"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </center>
+                      </div>
+                    <!-- Video - END -->
+                    <br><br>
+
+                    <!-- Press - START
+                      <div class="block">
+                        <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Press Coverage</h1>
+                        <p>
+                          The How2Sign dataset was featured by:
+                          <center>
+                              <a href="https://www.bsc.es/"> <img src="images/ack/bsc-logo.png" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                              <a href="https://www.upc.edu/ca"> <img src="images/ack/UPC_logo.png" class="img-responsive" alt="" style="max-width: calc(25%);"></a>
+                              <a href="https://www.cmu.edu/"> <img src="images/ack/CMU_logo.png" class="img-responsive" alt="" style="max-width: calc(10%);"></a>
+                              <a href="https://www.gallaudet.edu/"> <img src="images/ack/gallaudet_logo.png" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                          </center>
+                        </p>
+                      </div>
+                       Press - END -->
+
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Developed by</h1>
+                      <center>
+                          <a href="https://www.bsc.es/"> <img src="images/ack/bsc-logo.png" class="img-responsive" alt="" style="max-width: calc(19%);" ></a>
+                          &nbsp;
+                          <a href="https://www.upc.edu/ca"> <img src="images/ack/UPC_logo.png" class="img-responsive" alt="" style="max-width: calc(22%);"></a>
+                          &nbsp;
+                          <a href="https://www.cmu.edu/"> <img src="images/ack/CMU_logo.png" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;
+                          <a href="https://www.gallaudet.edu/"> <img src="images/ack/gallaudet_logo.png" class="img-responsive" alt="" style="max-width: calc(18%);"></a>
+                      </center>
+
+                      <br><br>
+                      <h1 class="title wow" data-wow-delay=".3s" data-wow-duration="500ms">Supported by</h1>
+                      <center>
+                          <a href="https://research.fb.com/"> <img src="images/ack/facebook_AI_logo.jpg" class="img-responsive" alt="" style="max-width: calc(20%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://fundacionlacaixa.org/es/home"> <img src="images/ack/La_Caixa_logo.jpg" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://web.gencat.cat/ca/inici"> <img src="images/ack/Generalitat_catalunya.png" class="img-responsive" alt="" style="max-width: calc(11%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://www.ciencia.gob.es/site-web/en/"> <img src="images/ack/espanha.png" class="img-responsive" alt="" style="max-width: calc(8%);"></a>
+                          &nbsp;&nbsp;
+                          <a href="https://www.bsc.es/es/descubre-el-bsc/excelencia-en-investigacion/severo-ochoa"> <img src="images/ack/severo_ochoa.jpeg" class="img-responsive" alt="" style="max-width: calc(15%);"></a>
+
+                      </center>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+<!--
+==================================================
+Footer Section Start
+================================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+
+                <p class="copyright"> <img src="images/cc-by.png" href="" class="img-fluid" alt="" > &nbsp;&nbsp; &copy;Copyright <script>document.write(new Date().getFullYear());</script> <span>How2Sign</span> <br>
+                  Template borrowed from <a href="https://cv.iri.upc-csic.es/index.html"> 3DPeople dataset</a>
+                </p>
+            </div>
+            <div class="col-md-4 col-12">
+
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <li>
+                      For general enquiries, please contact: <a href="mailto:amanda.duarte@upc.edu">amanda.duarte[at]upc.edu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!-- /#footer -->
+
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script>
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
